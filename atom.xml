@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>YuHuo</title>
+  
+  <subtitle>YuHuo</subtitle>
+  <link href="https://yuhuo863.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://yuhuo863.github.io/"/>
+  <updated>2025-11-02T14:11:01.281Z</updated>
+  <id>https://yuhuo863.github.io/</id>
+  
+  <author>
+    <name>yuhuo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://yuhuo863.github.io/2025/11/02/hello-world/"/>
+    <id>https://yuhuo863.github.io/2025/11/02/hello-world/</id>
+    <published>2025-11-02T14:04:00.000Z</published>
+    <updated>2025-11-02T14:11:01.281Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hello World" scheme="https://yuhuo863.github.io/tags/Hello-World/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 新手配置清单</title>
+    <link href="https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/"/>
+    <id>https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/</id>
+    <published>2025-11-02T11:45:00.000Z</published>
+    <updated>2025-11-02T13:49:45.830Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Hexo-新手配置清单：从搭建到上线的全流程指南&quot;&gt;&lt;a href=&quot;#Hexo-新手配置清单：从搭建到上线的全流程指南&quot; class=&quot;headerlink&quot; title=&quot;Hexo 新手配置清单：从搭建到上线的全流程指南&quot;&gt;&lt;/a&gt;Hexo</summary>
+        
+      
+    
+    
+    
+    <category term="工具教程" scheme="https://yuhuo863.github.io/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://yuhuo863.github.io/tags/Hexo/"/>
+    
+    <category term="博客搭建" scheme="https://yuhuo863.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="静态博客" scheme="https://yuhuo863.github.io/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
