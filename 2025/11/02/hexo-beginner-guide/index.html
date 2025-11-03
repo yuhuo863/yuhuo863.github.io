@@ -58,7 +58,6 @@
 <link rel="alternate" href="/atom.xml" title="YuHuo" type="application/atom+xml">
 </head>
 
-<script src="https://cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -335,6 +334,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -467,19 +479,19 @@
 根目录 _config.yml 配置懒加载：
 <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lazyload:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">onlypost:</span> <span class="literal">false</span>  <span class="comment"># 所有页面都启用</span></span><br><span class="line">    <span class="attr">loadingImg:</span> <span class="string">/img/loading.gif</span>  <span class="comment"># 加载占位图（需自行准备）</span></span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
-<h2 id="三、常见问题解决：新手踩坑指南"><a href="#三、常见问题解决：新手踩坑指南" class="headerlink" title="三、常见问题解决：新手踩坑指南"></a>三、常见问题解决：新手踩坑指南</h2><h3 id="1-执行-hexo-d-报错-“Deployer-not-found-git”"><a href="#1-执行-hexo-d-报错-“Deployer-not-found-git”" class="headerlink" title="1. 执行 hexo d 报错 “Deployer not found: git”"></a>1. 执行 hexo d 报错 “Deployer not found: git”</h3><pre><code>***原因***：未安装部署插件。`hexo-deployer-git` 
-***解决***：重新执行 `npm install hexo-deployer-git --save`, 确保根目录 _config.yml 中 deploy 配置正确。
+<h2 id="三、常见问题解决：新手踩坑指南"><a href="#三、常见问题解决：新手踩坑指南" class="headerlink" title="三、常见问题解决：新手踩坑指南"></a>三、常见问题解决：新手踩坑指南</h2><h3 id="1-执行-hexo-d-报错-“Deployer-not-found-git”"><a href="#1-执行-hexo-d-报错-“Deployer-not-found-git”" class="headerlink" title="1. 执行 hexo d 报错 “Deployer not found: git”"></a>1. 执行 hexo d 报错 “Deployer not found: git”</h3><pre><code>**原因**：未安装部署插件。`hexo-deployer-git` 
+**解决**：重新执行 `npm install hexo-deployer-git --save`, 确保根目录 _config.yml 中 deploy 配置正确。
 </code></pre>
-<h3 id="2-本地预览正常，部署后样式丢失"><a href="#2-本地预览正常，部署后样式丢失" class="headerlink" title="2. 本地预览正常，部署后样式丢失"></a>2. 本地预览正常，部署后样式丢失</h3><pre><code>***原因***：URL 配置错误，导致静态资源路径不正确。
-***解决***：检查 _config.yml 和主题/插件目录下的配置文件，确保路径和设置正确。
+<h3 id="2-本地预览正常，部署后样式丢失"><a href="#2-本地预览正常，部署后样式丢失" class="headerlink" title="2. 本地预览正常，部署后样式丢失"></a>2. 本地预览正常，部署后样式丢失</h3><pre><code>**原因**：URL 配置错误，导致静态资源路径不正确。
+**解决**：检查 _config.yml 和主题/插件目录下的配置文件，确保路径和设置正确。
 <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://yourname.github.io</span>  <span class="comment"># 确保域名正确</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span>  <span class="comment"># 根目录路径。若部署在子目录（如 username.github.io/blog），则设为 /blog/</span></span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
-<h3 id="3-主题配置修改后不生效"><a href="#3-主题配置修改后不生效" class="headerlink" title="3. 主题配置修改后不生效"></a>3. 主题配置修改后不生效</h3><pre><code>***原因***：缓存未清理，Hexo 会读取旧配置。
-***解决***：执行 `hexo clean` 清理缓存，再重新生成 `hexo g` 和预览 `hexo s`。
+<h3 id="3-主题配置修改后不生效"><a href="#3-主题配置修改后不生效" class="headerlink" title="3. 主题配置修改后不生效"></a>3. 主题配置修改后不生效</h3><pre><code>**原因**：缓存未清理，Hexo 会读取旧配置。
+**解决**：执行 `hexo clean` 清理缓存，再重新生成 `hexo g` 和预览 `hexo s`。
     <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
-<h3 id="4-新建-“分类”“标签”-页面无法访问"><a href="#4-新建-“分类”“标签”-页面无法访问" class="headerlink" title="4. 新建 “分类”“标签” 页面无法访问"></a>4. 新建 “分类”“标签” 页面无法访问</h3><pre><code>***原因***：需要手动创建对应页面文件。
-***解决***：在根目录执行：
+<h3 id="4-新建-“分类”“标签”-页面无法访问"><a href="#4-新建-“分类”“标签”-页面无法访问" class="headerlink" title="4. 新建 “分类”“标签” 页面无法访问"></a>4. 新建 “分类”“标签” 页面无法访问</h3><pre><code>**原因**：需要手动创建对应页面文件。
+**解决**：在根目录执行：
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建分类页面</span></span><br><span class="line">hexo new page <span class="string">"categories"</span></span><br><span class="line"><span class="comment"># 创建标签页面</span></span><br><span class="line">hexo new page <span class="string">"tags"</span></span><br></pre></td></tr></tbody></table></figure>
 然后编辑 source/categories/index.md 和 source/tags/index.md，在 Front-matter 中添加：
 <figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line"><span class="section">type: "categories"  # 标签页面对应 type: "tags"</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></tbody></table></figure>
@@ -1232,6 +1244,11 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+    
+    <script type="text/javascript" color="120, 140, 180"
+        pointColor="90, 110, 150" opacity='0.8'
+        zIndex="-1" count="150"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     

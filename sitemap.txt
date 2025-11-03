@@ -1,7 +1,7 @@
+https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/
 https://yuhuo863.github.io/friends/index.html
 https://yuhuo863.github.io/404.html
 https://yuhuo863.github.io/2025/11/02/hello-world/
-https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/
 https://yuhuo863.github.io/
 https://yuhuo863.github.io/tags/Hello-World/
 https://yuhuo863.github.io/tags/Hexo/
