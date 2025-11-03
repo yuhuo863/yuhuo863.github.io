@@ -18,7 +18,7 @@
 
 
     <title>标签: 博客搭建 | YuHuo</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon2.png">
     
 
 
@@ -58,13 +58,37 @@
 </head>
 
 <body>
+    
+  <div id="loading-box">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+      <div class="configure-border-1">
+        <div class="configure-core"></div>
+      </div>
+      <div class="configure-border-2">
+        <div class="configure-core"></div>
+      </div>
+      <div class="loading-word">加载中...</div>
+    </div>
+  </div>
+  <!-- 页面加载动画 -->
+  <script>
+    $(document).ready(function () {
+      document.body.style.overflow = 'auto';
+      document.getElementById('loading-box').classList.add("loaded")
+    })
+  </script>
+
+
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo2.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">YuHuo</span>
                 </a>
@@ -168,7 +192,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo2.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">YuHuo</div>
         <div class="logo-desc">
@@ -502,6 +526,9 @@
             
             <br>
             
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">1.4k</span>
+            
             
             
                 
@@ -746,29 +773,6 @@ $(function () {
         })
     }
 </script>
-
-    
-  <div id="loading-box">
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-      <div class="configure-border-1">
-        <div class="configure-core"></div>
-      </div>
-      <div class="configure-border-2">
-        <div class="configure-core"></div>
-      </div>
-      <div class="loading-word">加载中...</div>
-    </div>
-  </div>
-  <!-- 页面加载动画 -->
-  <script>
-    $(document).ready(function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loading-box').classList.add("loaded")
-    })
-  </script>
-
 
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
