@@ -6,7 +6,7 @@
   <link href="https://yuhuo863.github.io/atom.xml" rel="self"/>
   
   <link href="https://yuhuo863.github.io/"/>
-  <updated>2025-11-02T14:11:01.281Z</updated>
+  <updated>2025-11-04T05:09:51.554Z</updated>
   <id>https://yuhuo863.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-theme-matery主题的评论插件-Utterances</title>
+    <link href="https://yuhuo863.github.io/2025/11/04/hexo-matery-comment/"/>
+    <id>https://yuhuo863.github.io/2025/11/04/hexo-matery-comment/</id>
+    <published>2025-11-04T03:42:00.000Z</published>
+    <updated>2025-11-04T05:09:51.554Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;hexo-theme-matery主题的评论插件-Utterances&quot;&gt;&lt;a href=&quot;#hexo-theme-matery主题的评论插件-Utterances&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="主题配置" scheme="https://yuhuo863.github.io/categories/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="Utterances" scheme="https://yuhuo863.github.io/tags/Utterances/"/>
+    
+    <category term="评论插件" scheme="https://yuhuo863.github.io/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="hexo-theme-matery" scheme="https://yuhuo863.github.io/tags/hexo-theme-matery/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -44,7 +73,7 @@
     <link href="https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/"/>
     <id>https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/</id>
     <published>2025-11-02T11:45:00.000Z</published>
-    <updated>2025-11-03T12:29:47.246Z</updated>
+    <updated>2025-11-04T03:43:05.684Z</updated>
     
     
       

@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo 新手配置清单, YuHuo的个人博客">
-    <meta name="description" content="Hexo 新手配置清单：从搭建到上线的全流程指南作为 Hexo 新手，刚初始化博客后可能会被各种配置项困扰。这份清单整理了从主题安装、功能插件到部署上线的核心步骤，附带具体代码和操作提示，跟着做就能快速搭建起可用的博客。
-一、主题安装：让博">
+    <meta name="keywords" content="hexo-theme-matery主题的评论插件-Utterances, YuHuo的个人博客">
+    <meta name="description" content="hexo-theme-matery主题的评论插件-Utterances简介Utterances是一个基于GitHub Issues的评论插件，可以让你在博客中添加评论功能。
+相比于其他评论系统，它有以下优点：
+
+不需要额外的服务器或数据库支">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo 新手配置清单 | YuHuo</title>
+    <title>hexo-theme-matery主题的评论插件-Utterances | YuHuo</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
     
 
@@ -361,12 +363,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo 新手配置清单</h1>
+                    <h1 class="description center-align post-title">hexo-theme-matery主题的评论插件-Utterances</h1>
                 </div>
             </div>
         </div>
@@ -390,16 +392,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/Utterances/">
+                                <span class="chip bg-color">Utterances</span>
                             </a>
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                <span class="chip bg-color">博客搭建</span>
+                            <a href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                                <span class="chip bg-color">评论插件</span>
                             </a>
                         
-                            <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">静态博客</span>
+                            <a href="/tags/hexo-theme-matery/">
+                                <span class="chip bg-color">hexo-theme-matery</span>
                             </a>
                         
                     </div>
@@ -410,8 +412,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/" class="post-category">
-                                工具教程
+                            <a href="/categories/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="post-category">
+                                主题配置
                             </a>
                         
                     </div>
@@ -423,7 +425,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-11-02
+                    2025-11-04
                 </div>
                 
 
@@ -437,7 +439,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    745
                 </div>
                 
 
@@ -462,81 +464,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo-新手配置清单：从搭建到上线的全流程指南"><a href="#Hexo-新手配置清单：从搭建到上线的全流程指南" class="headerlink" title="Hexo 新手配置清单：从搭建到上线的全流程指南"></a>Hexo 新手配置清单：从搭建到上线的全流程指南</h1><p>作为 Hexo 新手，刚初始化博客后可能会被各种配置项困扰。这份清单整理了从主题安装、功能插件到部署上线的核心步骤，附带具体代码和操作提示，跟着做就能快速搭建起可用的博客。</p>
-<h2 id="一、主题安装：让博客告别默认样式"><a href="#一、主题安装：让博客告别默认样式" class="headerlink" title="一、主题安装：让博客告别默认样式"></a>一、主题安装：让博客告别默认样式</h2><p>Hexo 默认主题（landscape）过于简单，推荐两款主流主题，按步骤操作即可切换：</p>
-<h3 id="1-Next-主题（极简风，适合技术博客）"><a href="#1-Next-主题（极简风，适合技术博客）" class="headerlink" title="1. Next 主题（极简风，适合技术博客）"></a>1. Next 主题（极简风，适合技术博客）</h3><h4 id="安装步骤："><a href="#安装步骤：" class="headerlink" title="安装步骤："></a>安装步骤：</h4><ol>
-<li>进入博客根目录，执行命令拉取主题：<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></tbody></table></figure></li>
-<li>打开根目录 _config.yml，修改主题配置： <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span> <span class="comment"># 替换默认主题 landspace</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li>基础配置（进入 themes/next/_config.yml）：<ul>
-<li>开启暗黑模式：darkmode: true</li>
-<li>添加导航菜单（如 “分类”“标签”）：</li>
+                <h1 id="hexo-theme-matery主题的评论插件-Utterances"><a href="#hexo-theme-matery主题的评论插件-Utterances" class="headerlink" title="hexo-theme-matery主题的评论插件-Utterances"></a>hexo-theme-matery主题的评论插件-Utterances</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a target="_blank" rel="noopener" href="https://utteranc.es/">Utterances</a>是一个基于GitHub Issues的评论插件，可以让你在博客中添加评论功能。</p>
+<p>相比于其他评论系统，它有以下优点：</p>
+<ul>
+<li>不需要额外的服务器或数据库支持；</li>
+<li>可以利用GitHub Issues进行管理，方便备份和恢复；</li>
+<li>支持Markdown语法，可以编写富文本内容；</li>
+<li>可以自定义样式和主题。</li>
 </ul>
- <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<h3 id="2-Butterfly-主题（清新风，适合个人博客）"><a href="#2-Butterfly-主题（清新风，适合个人博客）" class="headerlink" title="2. Butterfly 主题（清新风，适合个人博客）"></a>2. Butterfly 主题（清新风，适合个人博客）</h3><h4 id="安装步骤：-1"><a href="#安装步骤：-1" class="headerlink" title="安装步骤："></a>安装步骤：</h4><ol>
-<li>拉取主题： <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></tbody></table></figure></li>
-<li>根目录 _config.yml 启用主题： <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li>初始化主题配置（推荐复制主题配置到根目录，方便维护）： <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> themes/butterfly/_config.yml _config.butterfly.yml</span><br></pre></td></tr></tbody></table></figure></li>
-<li>基础设置（编辑 _config.butterfly.yml）：<ul>
-<li>设置网站图标：favicon: /img/favicon.ico（需提前将图标放入 source/img 目录）</li>
-<li>开启侧边栏：sidebar: right（右侧显示文章目录和作者信息）</li>
+<p>缺点:</p>
+<ul>
+<li>不支持匿名评论，需要GitHub账号登录。</li>
+<li>功能较为单一，没有复杂的自定义选项。</li>
+<li>国内访问速度较慢，可能需要使用代理。</li>
 </ul>
-</li>
-</ol>
-<h2 id="二、必备插件：提升博客功能与体验"><a href="#二、必备插件：提升博客功能与体验" class="headerlink" title="二、必备插件：提升博客功能与体验"></a>二、必备插件：提升博客功能与体验</h2><h3 id="1-部署插件（必装，用于发布到-GitHub-Gitee）"><a href="#1-部署插件（必装，用于发布到-GitHub-Gitee）" class="headerlink" title="1. 部署插件（必装，用于发布到 GitHub/Gitee）"></a>1. 部署插件（必装，用于发布到 GitHub/Gitee）</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
+<p>参考链接: <a target="_blank" rel="noopener" href="https://www.axitown.com/896aea9a9547/">Hexo 评论插件对比：Gitalk vs Valine vs Utterances</a></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="1-创建存储评论的仓库"><a href="#1-创建存储评论的仓库" class="headerlink" title="1. 创建存储评论的仓库"></a>1. 创建存储评论的仓库</h3><p>首先，你需要在GitHub上创建一个<strong>公开</strong>的仓库来存储评论。所有评论都会以Issues的形式存储在这个仓库中。这个仓库不需要包含任何代码文件。并在你的评论仓库中安装<a target="_blank" rel="noopener" href="https://github.com/apps/utterances">utterances app</a>, 指定创建存储评论的仓库。</p>
+<p>这里具体步骤参考: <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/785d727810b3">hexo-fluid添加utterances评论功能(详细图文过程)</a></p>
+<p>在此，也表示感谢作者的分享。</p>
+<h3 id="2-utterances安装完成后-访问utterances生成配置脚本。"><a href="#2-utterances安装完成后-访问utterances生成配置脚本。" class="headerlink" title="2. utterances安装完成后,访问utterances生成配置脚本。"></a>2. utterances安装完成后,访问<a target="_blank" rel="noopener" href="https://utteranc.es/">utterances</a>生成配置脚本。</h3><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span> <span class="attr">data-aos</span>=<span class="string">"fade-up"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"utteranc-container"</span> <span class="attr">class</span>=<span class="string">"card-content"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://utteranc.es/client.js"</span> // <span class="attr">引入utterances的客户端脚本</span></span></span><br><span class="line"><span class="tag">                <span class="attr">repo</span>=<span class="string">"yuhuo863/blog-comments"</span> // <span class="attr">替换为你的仓库信息</span>, <span class="attr">格式为</span>"<span class="attr">用户名</span>/<span class="attr">仓库名</span>"</span></span><br><span class="line"><span class="tag">                <span class="attr">issue-term</span>=<span class="string">"pathname"</span> // <span class="attr">评论的分类方式</span>，<span class="attr">可选pathname</span>、<span class="attr">url</span>、<span class="attr">title</span></span></span><br><span class="line"><span class="tag">                <span class="attr">theme</span>=<span class="string">"github-light"</span> // <span class="attr">评论的主题</span>，<span class="attr">默认github-light</span></span></span><br><span class="line"><span class="tag">                <span class="attr">crossorigin</span>=<span class="string">"anonymous"</span> // <span class="attr">跨域策略</span>，<span class="attr">默认anonymous</span></span></span><br><span class="line"><span class="tag">                <span class="attr">async</span> // <span class="attr">异步加载</span>，<span class="attr">默认true</span></span></span><br><span class="line"><span class="tag">            &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p>此外，外面加了2个div模块，主要是为了在页面展示的时候加入一个方块、和文章风格保持基本一致。</p>
+<h3 id="3-在hexo-theme-matery主题配置文件中添加utterances"><a href="#3-在hexo-theme-matery主题配置文件中添加utterances" class="headerlink" title="3. 在hexo-theme-matery主题配置文件中添加utterances"></a>3. 在hexo-theme-matery主题配置文件中添加utterances</h3><p>接下来，你需要在主题文件下的<code>_config.yml</code>文件中添加以下代码来启用utterances：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">utterances:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
 
-在根目录 _config.yml 配置仓库地址：
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repository:</span> <span class="string">https://github.com/yourname/yourname.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 分支名（GitHub 新仓库默认 main，旧仓库可能是 master）</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h3 id="2-代码高亮（让代码块更美观）"><a href="#2-代码高亮（让代码块更美观）" class="headerlink" title="2. 代码高亮（让代码块更美观）"></a>2. 代码高亮（让代码块更美观）</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-prism-plugin --save</span><br></pre></td></tr></tbody></table></figure>
-在根目录 _config.yml 启用：
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">    <span class="attr">mode:</span> <span class="string">'preprocess'</span>  <span class="comment"># 实时高亮</span></span><br><span class="line">    <span class="attr">theme:</span> <span class="string">'dracula'</span>    <span class="comment"># 主题（可选 monokai、solarized-light 等）</span></span><br><span class="line">    <span class="attr">line_number:</span> <span class="literal">true</span>   <span class="comment"># 显示行号</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h3 id="3-自动生成文章摘要（首页显示）"><a href="#3-自动生成文章摘要（首页显示）" class="headerlink" title="3. 自动生成文章摘要（首页显示）"></a>3. 自动生成文章摘要（首页显示）</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></tbody></table></figure>
-在根目录 _config.yml 中开启：
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">length:</span> <span class="number">120</span> <span class="comment"># 摘要长度，默认全文</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h3 id="4-SEO-优化（帮助搜索引擎收录）"><a href="#4-SEO-优化（帮助搜索引擎收录）" class="headerlink" title="4. SEO 优化（帮助搜索引擎收录）"></a>4. SEO 优化（帮助搜索引擎收录）</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成站点地图</span></span><br><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></tbody></table></figure>
-根目录 _config.yml 添加：
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成 sitemap 文件，帮助搜索引擎收录</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br></pre></td></tr></tbody></table></figure>
-生成后可在 public 目录找到这两个文件，提交给 Google 或百度搜索资源平台。
-</code></pre>
-<h3 id="5-图片优化（自动添加标题-懒加载）"><a href="#5-图片优化（自动添加标题-懒加载）" class="headerlink" title="5. 图片优化（自动添加标题 + 懒加载）"></a>5. 图片优化（自动添加标题 + 懒加载）</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 图片添加标题</span></span><br><span class="line">npm install hexo-image-caption --save</span><br><span class="line"><span class="comment"># 图片懒加载</span></span><br><span class="line">npm install hexo-img-lazyload --save</span><br></pre></td></tr></tbody></table></figure>
-根目录 _config.yml 配置懒加载：
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lazyload:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">onlypost:</span> <span class="literal">false</span>  <span class="comment"># 所有页面都启用</span></span><br><span class="line">    <span class="attr">loadingImg:</span> <span class="string">/img/loading.gif</span>  <span class="comment"># 加载占位图（需自行准备）</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h2 id="三、常见问题解决：新手踩坑指南"><a href="#三、常见问题解决：新手踩坑指南" class="headerlink" title="三、常见问题解决：新手踩坑指南"></a>三、常见问题解决：新手踩坑指南</h2><h3 id="1-执行-hexo-d-报错-“Deployer-not-found-git”"><a href="#1-执行-hexo-d-报错-“Deployer-not-found-git”" class="headerlink" title="1. 执行 hexo d 报错 “Deployer not found: git”"></a>1. 执行 hexo d 报错 “Deployer not found: git”</h3><pre><code>**原因**：未安装部署插件。`hexo-deployer-git` 
-**解决**：重新执行 `npm install hexo-deployer-git --save`, 确保根目录 _config.yml 中 deploy 配置正确。
-</code></pre>
-<h3 id="2-本地预览正常，部署后样式丢失"><a href="#2-本地预览正常，部署后样式丢失" class="headerlink" title="2. 本地预览正常，部署后样式丢失"></a>2. 本地预览正常，部署后样式丢失</h3><pre><code>**原因**：URL 配置错误，导致静态资源路径不正确。
-**解决**：检查 _config.yml 和主题/插件目录下的配置文件，确保路径和设置正确。
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://yourname.github.io</span>  <span class="comment"># 确保域名正确</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span>  <span class="comment"># 根目录路径。若部署在子目录（如 username.github.io/blog），则设为 /blog/</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h3 id="3-主题配置修改后不生效"><a href="#3-主题配置修改后不生效" class="headerlink" title="3. 主题配置修改后不生效"></a>3. 主题配置修改后不生效</h3><pre><code>**原因**：缓存未清理，Hexo 会读取旧配置。
-**解决**：执行 `hexo clean` 清理缓存，再重新生成 `hexo g` 和预览 `hexo s`。
-    <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h3 id="4-新建-“分类”“标签”-页面无法访问"><a href="#4-新建-“分类”“标签”-页面无法访问" class="headerlink" title="4. 新建 “分类”“标签” 页面无法访问"></a>4. 新建 “分类”“标签” 页面无法访问</h3><pre><code>**原因**：需要手动创建对应页面文件。
-**解决**：在根目录执行：
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建分类页面</span></span><br><span class="line">hexo new page <span class="string">"categories"</span></span><br><span class="line"><span class="comment"># 创建标签页面</span></span><br><span class="line">hexo new page <span class="string">"tags"</span></span><br></pre></td></tr></tbody></table></figure>
-然后编辑 source/categories/index.md 和 source/tags/index.md，在 Front-matter 中添加：
-<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line"><span class="section">type: "categories"  # 标签页面对应 type: "tags"</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h2 id="四、发布文章：从写作到上线的最后一步"><a href="#四、发布文章：从写作到上线的最后一步" class="headerlink" title="四、发布文章：从写作到上线的最后一步"></a>四、发布文章：从写作到上线的最后一步</h2><h3 id="1-新建文章："><a href="#1-新建文章：" class="headerlink" title="1. 新建文章："></a>1. 新建文章：</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] <span class="string">"title"</span></span><br></pre></td></tr></tbody></table></figure>
-编辑生成的 source/_posts/目录下的 md 文件，用编辑器（如 Typora、VS Code）编写内容。
-</code></pre>
-<h3 id="2-文章头部配置（Front-matter）："><a href="#2-文章头部配置（Front-matter）：" class="headerlink" title="2. 文章头部配置（Front-matter）："></a>2. 文章头部配置（Front-matter）：</h3><pre><code>在每篇文章开头添加 Front-matter，如：
-<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 博客搭建全流程指南</span><br><span class="line">date: 2025-11-02 10:00:00  # 日期格式 YYYY-MM-DD HH:mm:ss</span><br><span class="line">categories: 分类名称  # 分类（可多个，用逗号分隔）</span><br><span class="line">tags: [标签1, 标签2]  # 标签</span><br><span class="line"><span class="section">cover: /img/cover.jpg  # 封面图（可选）（需放入 source/img 目录）</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<h3 id="3-图片处理："><a href="#3-图片处理：" class="headerlink" title="3. 图片处理："></a>3. 图片处理：</h3><pre><code>将本地图片上传到图床，替换文中相对路径为绝对 URL。
-</code></pre>
-<h3 id="4-预览与修改："><a href="#4-预览与修改：" class="headerlink" title="4. 预览与修改："></a>4. 预览与修改：</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清理缓存，避免读取旧配置文件</span></span><br><span class="line">hexo generate <span class="comment"># 生成静态文件（HTML、CSS 等）</span></span><br><span class="line">hexo server <span class="comment"># 本地预览效果</span></span><br></pre></td></tr></tbody></table></figure>
-每次改动后执行 `hexo s` 查看效果，满意后提交至仓库。
-</code></pre>
-<h3 id="5-提交与部署："><a href="#5-提交与部署：" class="headerlink" title="5. 提交与部署："></a>5. 提交与部署：</h3><pre><code><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy <span class="comment"># 部署到远程仓库</span></span><br></pre></td></tr></tbody></table></figure>
-等待几分钟后，访问你的博客域名(如 https://yourname.github.io/) 即可查看最新内容。
-</code></pre>
-<p>以上就是 Hexo 新手从搭建到上线的全流程指南。跟随步骤操作，就能快速拥有一个美观实用的个人博客！如果遇到其他问题，欢迎在评论区交流～</p>
+<h3 id="4-在主题文件下的layout-partial-utterances-ejs文件中配置utterances模板-方便其他模板引用。"><a href="#4-在主题文件下的layout-partial-utterances-ejs文件中配置utterances模板-方便其他模板引用。" class="headerlink" title="4. 在主题文件下的layout/_partial/utterances.ejs文件中配置utterances模板, 方便其他模板引用。"></a>4. 在主题文件下的<code>layout/_partial/utterances.ejs</code>文件中配置utterances模板, 方便其他模板引用。</h3><p>在该文件中添加第二步生成的repo配置信息。</p>
+<h3 id="5-在主题文件下的需要评论系统的模板中引用配置好的utterances模板。"><a href="#5-在主题文件下的需要评论系统的模板中引用配置好的utterances模板。" class="headerlink" title="5. 在主题文件下的需要评论系统的模板中引用配置好的utterances模板。"></a>5. 在主题文件下的需要评论系统的模板中引用配置好的utterances模板。</h3><p>例如，在每个文章详情页模板中添加评论功能: 你只需要在<code>layout/_partial/post_detail.ejs</code>模板中添加以下代码来引入utterances的客户端脚本即可。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.utterances &amp;&amp; theme.utterances.enable) { %&gt;</span><br><span class="line">    &lt;%- partial('_partial/utterances') %&gt;</span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="6-刷新你的博客页面，你应该可以看到评论功能已经正常工作了。"><a href="#6-刷新你的博客页面，你应该可以看到评论功能已经正常工作了。" class="headerlink" title="6. 刷新你的博客页面，你应该可以看到评论功能已经正常工作了。"></a>6. 刷新你的博客页面，你应该可以看到评论功能已经正常工作了。</h3><p>分别执行清理缓存<code>hexo clean</code>，生成静态文件<code>hexo generate</code>，重启服务<code>hexo serve</code>，刷新页面。</p>
+<p>这样，你就成功地在hexo-theme-matery主题中启用并配置了utterances评论插件。</p>
+<p>参考链接: <a target="_blank" rel="noopener" href="https://liukgg.github.io/2021/08/15/hexo/hexo-zai-matery-zhu-ti-xia-ji-cheng-utteranc-ping-lun-cha-jian/">hexo在matery主题下集成utteranc评论插件</a></p>
 
                 
             </div>
@@ -563,7 +520,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/">https://yuhuo863.github.io/2025/11/02/hexo-beginner-guide/</a>
+                    <a href="https://yuhuo863.github.io/2025/11/04/hexo-matery-comment/">https://yuhuo863.github.io/2025/11/04/hexo-matery-comment/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -601,16 +558,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/Utterances/">
+                                    <span class="chip bg-color">Utterances</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                    <span class="chip bg-color">博客搭建</span>
+                                <a href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                                    <span class="chip bg-color">评论插件</span>
                                 </a>
                             
-                                <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">静态博客</span>
+                                <a href="/tags/hexo-theme-matery/">
+                                    <span class="chip bg-color">hexo-theme-matery</span>
                                 </a>
                             
                         </div>
@@ -703,9 +660,68 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2025/11/04/hexo-matery-comment/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="hexo-theme-matery主题的评论插件-Utterances">
+                        
+                        <span class="card-title">hexo-theme-matery主题的评论插件-Utterances</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="post-category">
+                                    主题配置
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Utterances/">
+                        <span class="chip bg-color">Utterances</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                        <span class="chip bg-color">评论插件</span>
+                    </a>
+                    
+                    <a href="/tags/hexo-theme-matery/">
+                        <span class="chip bg-color">hexo-theme-matery</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2025/11/02/hello-world/">
                     <div class="card-image">
@@ -723,9 +739,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-11-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -739,64 +755,6 @@
                     
                     <a href="/tags/Hello-World/">
                         <span class="chip bg-color">Hello World</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2025/11/02/hexo-beginner-guide/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Hexo 新手配置清单">
-                        
-                        <span class="card-title">Hexo 新手配置清单</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-11-02
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/" class="post-category">
-                                    工具教程
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">博客搭建</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">静态博客</span>
                     </a>
                     
                 </div>
