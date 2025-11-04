@@ -46,6 +46,37 @@
   </entry>
   
   <entry>
+    <title>markdown图片自定义尺寸和懒加载</title>
+    <link href="https://yuhuo863.github.io/2025/11/04/hexo-resize-lazyload-image/"/>
+    <id>https://yuhuo863.github.io/2025/11/04/hexo-resize-lazyload-image/</id>
+    <published>2025-11-03T16:00:00.000Z</published>
+    <updated>2025-11-04T16:15:50.488Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Hexo-中扩展-Markdown-语法设置图片的大小和懒加载&quot;&gt;&lt;a href=&quot;#Hexo-中扩展-Markdown-语法设置图片的大小和懒加载&quot; class=&quot;headerlink&quot; title=&quot;Hexo 中扩展 Markdown</summary>
+        
+      
+    
+    
+    
+    <category term="第三方库" scheme="https://yuhuo863.github.io/categories/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
+    
+    
+    <category term="markdown" scheme="https://yuhuo863.github.io/tags/markdown/"/>
+    
+    <category term="图片" scheme="https://yuhuo863.github.io/tags/%E5%9B%BE%E7%89%87/"/>
+    
+    <category term="自定义尺寸" scheme="https://yuhuo863.github.io/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B0%BA%E5%AF%B8/"/>
+    
+    <category term="懒加载" scheme="https://yuhuo863.github.io/tags/%E6%87%92%E5%8A%A0%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://yuhuo863.github.io/2025/11/02/hello-world/"/>
     <id>https://yuhuo863.github.io/2025/11/02/hello-world/</id>
