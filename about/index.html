@@ -681,7 +681,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"第三方库","value":1},{"name":"工具教程","value":1},{"name":"主题配置","value":1}],
+                data: [{"name":"工具教程","value":1},{"name":"主题配置","value":1},{"name":"第三方库","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -705,7 +705,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Hello World","markdown","图片","自定义尺寸","懒加载","Hexo","博客搭建","静态博客","Utterances","评论插件"]
+                data: ["Hexo","博客搭建","静态博客","Hello World","Utterances","评论插件","hexo-theme-matery","markdown","图片","自定义尺寸"]
             }
         ],
         yAxis: [
@@ -888,8 +888,44 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/Hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">Hexo</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">博客搭建</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+                <span class="chip center-align waves-effect waves-light chip-default">静态博客</span>
+            </a>
+            
+            
+            
             <a href="/tags/Hello-World/">
                 <span class="chip center-align waves-effect waves-light chip-default">Hello World</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Utterances/">
+                <span class="chip center-align waves-effect waves-light chip-default">Utterances</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                <span class="chip center-align waves-effect waves-light chip-default">评论插件</span>
+            </a>
+            
+            
+            
+            <a href="/tags/hexo-theme-matery/">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo-theme-matery</span>
             </a>
             
             
@@ -914,42 +950,6 @@
             
             <a href="/tags/%E6%87%92%E5%8A%A0%E8%BD%BD/">
                 <span class="chip center-align waves-effect waves-light chip-default">懒加载</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Hexo/">
-                <span class="chip center-align waves-effect waves-light chip-default">Hexo</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">博客搭建</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
-                <span class="chip center-align waves-effect waves-light chip-default">静态博客</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Utterances/">
-                <span class="chip center-align waves-effect waves-light chip-default">Utterances</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
-                <span class="chip center-align waves-effect waves-light chip-default">评论插件</span>
-            </a>
-            
-            
-            
-            <a href="/tags/hexo-theme-matery/">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo-theme-matery</span>
             </a>
             
             
@@ -1313,7 +1313,7 @@ $(function () {
         <script type="text/javascript">
           var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
           var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-          var cookieDomain = "https://yuhuo863.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
+          var cookieDomain = "https://www.yuhuo863.top"; //Cookie地址, 一定要设定, 通常为你的网址
           var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
           var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
           var translateButtonId = "translateLink"; //默认互换id

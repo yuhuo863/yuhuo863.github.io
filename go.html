@@ -80,23 +80,23 @@
     <script type="text/javascript">const host = window.location.host; function GetQueryString(name) { var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); var r = window.location.search.substr(1).match(reg); return r ? decodeURI(r[2]) : null } var jump_url = GetQueryString('u');  var UrlReg = '^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)'; if (!jump_url || !jump_url.match(UrlReg)) { document.title = '参数错误，正在返回首页...'; jump_url = location.origin } setTimeout(function link_jump() {  if (document.location.hostname !== 'localhost' && host !== 'www.yuhuo863.top') { location.href = '//' + host; return }  location.href = jump_url }, 1000); setTimeout(function () { window.opener = null; window.close() }, 30000);
     </script>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const targetUrl = urlParams.get('u'); // 获取 URL 参数中的 'u'
+        // const urlParams = new URLSearchParams(window.location.search);
+        // const targetUrl = urlParams.get('u'); // 获取 URL 参数中的 'u'
 
-        if (!targetUrl) {
-            window.location.href = '//www.yuhuo863.top'; // 重定向到首页
-        }
+        // if (!targetUrl) {
+        //     window.location.href = '//www.yuhuo863.top'; // 重定向到首页
+        // }
 
-        function recordClick() {
-            const params = new URLSearchParams();
-            params.append('target', targetUrl);
-            params.append('time', new Date().toISOString());
+        // function recordClick() {
+        //     const params = new URLSearchParams();
+        //     params.append('target', targetUrl);
+        //     params.append('time', new Date().toISOString());
 
-            const success = navigator.sendBeacon('http://localhost:3000/api/record-click', params); // 无需等待响应
-            console.log('表单数据发送状态:', success);
-        }
+        //     const success = navigator.sendBeacon('http://localhost:3000/api/record-click', params); // 无需等待响应
+        //     console.log('表单数据发送状态:', success);
+        // }
 
-        recordClick(); // 页面加载时记录点击事件
+        // recordClick(); // 页面加载时记录点击事件
 
     </script>
 </head>
