@@ -10,10 +10,10 @@ https://www.yuhuo863.top/friends/index.html
 https://www.yuhuo863.top/404.html
 https://www.yuhuo863.top/2025/11/02/hello-world/
 https://www.yuhuo863.top/
-https://www.yuhuo863.top/tags/Hello-World/
 https://www.yuhuo863.top/tags/Hexo/
 https://www.yuhuo863.top/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
 https://www.yuhuo863.top/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/
+https://www.yuhuo863.top/tags/Hello-World/
 https://www.yuhuo863.top/tags/Utterances/
 https://www.yuhuo863.top/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/
 https://www.yuhuo863.top/tags/hexo-theme-matery/
